@@ -1,0 +1,2651 @@
+local t = coroutine
+local o = bit32
+local q = string
+local s = setfenv
+local u = unpack
+local x = tostring
+local D = error
+local H = getfenv
+local i = table.create
+local Ns = table.move
+local Us = string.gsub
+local Ks = string.match
+local f = string.byte
+local Es = string.char
+local J = bit32.bxor
+local e = bit32.lrotate
+local d = bit32.rrotate
+local Ws = bit32.rrotate
+local ks = bit32.lrotate
+local Ts = bit32.lshift
+local Gs = bit32.rshift
+local Fs = bit32.bnot
+local cs = bit32.band
+local Zs = bit32.bor
+local Q = bit32.countlz
+local j = bit32.countrz
+local gs = bit32.countrz
+local hs = bit32.countlz
+
+local y = {47675, 2950972851, 619534061, 2022217614, 3310079602, 3979888549, 1515385583, 3595477152, 2009625698}
+
+local S = "readstring"
+local a = "readu16"
+local A = "readu32"
+local l = "readf32"
+local V = "readi32"
+local p = "copy"
+local r = "create"
+local a_var = "re\u{0061}du\u{0031}6"
+local r_var = "\114\101ad\i1\54"
+local p_var = "\99o\p\u{079}"
+local s_var = "\u{0072}\u{065}ad\u{0073}\116ri\110\z  g"
+local V_var = "\x72eadf3\50"
+
+local function g(a, c)
+    a[15] = c.readu8
+end
+
+local function L(a, c)
+    c = a[0x432d]
+    return c
+end
+
+local function Y(a, c)
+    c = a[1765]
+    return c
+end
+
+local function k(a, c)
+    c = a[10199]
+    return c
+end
+
+local function by(a, c)
+    c = a[18680]
+    return c
+end
+
+local function es(a, c)
+    c = a[0x1B48]
+    return c
+end
+
+local function O(a, c, E)
+    E = -4294967238 + ((a.Ys((c[607] == a.y[0b111] and c[24041] or c[14881]) - c[607], c[0x234a])) + c[25851])
+    c[0x432D] = E
+    return E
+end
+
+local function F(a, c, E)
+    c[9034] = 97762278 + ((a.Fs((a.ks(a.y[0b00110], (c[13213])) - a.y[0x2])) - a.y[0x4]))
+    c[14881] = (-47653 + ((a.cs((a.cs(a.y[0x2] + a.y[0b11], a.y[0x2])), E)) + a.y[0X1]))
+    E = (0b1011 + (a.Ys((a.Ts((a.Ts((a.cs(a.y[9], c[0x339D], a.y[7])), (c[0x339d]))), (c[0X339d]))), E)))
+    c[0X27D7] = E
+    return E
+end
+
+local function B(a, c, E)
+    c[11751] = (-0X37b50ECb + ((a.Fs(a.y[6] - c[0X3a21] + c[8280])) + a.y[0X3]))
+    c[21018] = (0b110000 + ((a.Gs((a.Ts(c[8280] + c[9034], (c[607]))), (c[0X25f]))) - c[0x432d]))
+    E = -0x5E5DeB41 + (a.Ys((a.ks(a.y[0X008] + a.y[0B100] < c[0Xd0C] and c[1765] or a.y[0X7], (c[0x5DE9])))))
+    c[0X4aa8] = E
+    return E
+end
+
+local function G(a, c, E)
+    E = 0b1011001 + (a.hs((a.Gs((a.Ws(a.y[0X3], (c[0X339D]))), (c[14881]))) + a.y[0B1]))
+    c[0Xb00] = E
+    return E
+end
+
+local function Z(a, c, E)
+    c = -427818893 + (a.Ts((a.Zs((a.hs(a.y[0B11] - E[0X234A])), c)), (E[14881])))
+    E[0xD0C] = c
+    return c
+end
+
+local function K(a, c, E)
+    E = (-2022217671 + ((a.Zs((a.Zs(c[3636] + a.y[0X4], c[3636])))) + E))
+    c[14726] = E
+    return E
+end
+
+local function Py(a, c, E)
+    E[0x71D2] = (-0X98 + (E[8001] + c + E[1765] - E[0x25F] + E[18680]))
+    c = (-4294966984 + ((a.Fs(E[26454] + E[17419] ~= a.y[0X8] and E[11781] or E[9491])) - E[3340]))
+    E[0X567F] = c
+    return c
+end
+
+local function js(a, c, E)
+    E[20045] = -3595477112 + (((a.Ts(E[27698], (E[0X6A23]))) ~= E[30397] and E[31409] or E[12409]) - E[0X339d] == E[0XE34] and E[21018] or a.y[0x8])
+    c = (-0XD6f + (a.Ws(E[0X74ea] - E[17197] + E[0X2058] == a.y[0b1001] and E[0X5de9] or E[30711], (E[32592]))))
+    E[0X4926] = c
+    return c
+end
+
+local function ey(a, c, E)
+    c = (-3793855364 + ((a.ks(E[0X2058] >= E[0X6C32] and a.y[0X4] or E[0X7F50], (E[27698]))) - E[24041] - a.y[0X1]))
+    E[30711] = c
+    return c
+end
+
+local function my(a, c, E)
+    E = (-1515385535 + (((a.Ys(c[9034], c[8280], c[0X2de7])) + c[21018] < c[19112] and a.y[0x7] or c[0X3A21]) < c[0X64FB] and a.y[7] or c[0X6403]))
+    c[13404] = E
+    return E
+end
+
+local function Zy(a, c, E)
+    E = (0X6 + ((a.hs((a.Zs((a.Zs(c[13404], c[21018])), c[3636])))) + c[0x2513]))
+    c[29930] = E
+    return E
+end
+
+local function ly(a, c, E)
+    E[0x875] = -11582030 + (a.Ys((a.Ts((a.Zs(E[13404] >= E[0X6e5] and E[0XD0c] or E[0X3a21])), (E[13213]))), a.y[1], E[8280]))
+    E[0X007f50] = -3353667791 + (a.ks((a.y[0x3] < a.y[0X1] and E[8280] or a.y[0X1]) - a.y[0X2] + a.y[0b1001], (E[607])))
+    c = -3310079580 + ((E[0x25F] - a.y[0B111] ~= a.y[0x3] and E[0X0161e] or a.y[0b101]) + a.y[0X5] - E[607])
+    E[0X49EE] = c
+    return c
+end
+
+local function Fy(a, c, E)
+    E[28588] = (-2272749463 + ((a.Fs(E[30711] + E[0X74EA] + a.y[0x4])) + E[0X48F8]))
+    E[0x271b] = (95 + (a.gs((a.ks(E[0x4aa8] - a.y[0B1001], (E[24041]))) - E[0Xb00])))
+    c = -0B1111 + ((a.Zs((a.Ws(a.y[0X4] == a.y[0X9] and E[0X77F7] or E[17419], (E[0X521a]))), a.y[0x8], E[17197])) == a.y[0X3] and E[32592] or E[25851])
+    E[0X1f41] = c
+    return c
+end
+
+local function yy(a, c, E)
+    c = (76 + ((a.hs((E[0x521a] < a.y[0x9] and a.y[0b1001] or E[0x6c32]) - c)) == E[14881] and E[25603] or E[0X4aa8]))
+    E[31409] = c
+    return c
+end
+
+local function jy(a, c, E)
+    c = -85 + (a.ks((a.hs(E[9034])) - a.y[0X7] + a.y[0X7], (E[21018])))
+    E[0X3079] = c
+    return c
+end
+
+local function n(a, c, E, N, u)
+    E[0b10111] = nil
+    E[24] = (c.readu32)
+    if not (not N[0XE34]) then
+        u = N[3636]
+    else
+        N[25603] = 0X15 + (a.Ys((a.cs(N[3340] - N[0x0D0C] + N[10199])), N[0X234A]))
+        u = (-3979888481 + ((a.y[0x8] + a.y[0B1] == N[2816] and u or N[13213]) - a.y[0B1000] >= a.y[0X6] and u or a.y[0X6]))
+        N[0Xe34] = u
+    end
+    return u
+end
+
+local function E(a, c, E, N, u)
+    local t
+    c[0b001111] = nil
+    N = (0)
+    while true do
+        t, N = a:W(c, N, E, u)
+        if t == 6462 then break
+        elseif t == 0XCC9b then continue end
+    end
+    c[0X10] = (2147483648)
+    return N
+end
+
+local function T(a, c)
+    a[0X6] = nil
+    a[0X7] = nil
+    a[0X8] = (nil)
+end
+
+local function W(a, c, E, N, u)
+    if not (E > 0b110010) then
+        if E == 0X0 then
+            c[12] = a.x
+            if not u[5662] then
+                E = 0X5f + ((a.hs(a.y[0X5] + u[0X2058])) - a.y[0b100] <= u[13213] and E or a.y[0B1])
+                u[5662] = (E)
+            else
+                E = (u[5662])
+            end
+        else
+            c[14] = N[a.r]
+            if not (not u[0XB00]) then
+                E = (u[0XB00])
+            else
+                E = a:G(u, E)
+            end
+        end
+    else
+        if E == 0b1011111 then
+            c[0Xd] = 0X0
+            if not u[1765] then
+                E = (49 + (a.hs((a.Ys(u[8280] - a.y[0X5] + a.y[8], a.y[0X7])))))
+                u[1765] = E
+            else
+                E = a:Y(u, E)
+            end
+            return 52379, E
+        else
+            a:g(c, N)
+            return 0X193E, E
+        end
+    end
+    return nil, E
+end
+
+local function us(a, c, E, N)
+    E[0X1e][0b110] = a.d
+    if not N[0X1b48] then
+        c = a:Qs(c, N)
+    else
+        c = a:es(c, N)
+    end
+    return c
+end
+
+local function Zs(a, c, E)
+    c = a[0X2058]
+    return c
+end
+
+local function ry(a, a)
+    for c = 0b0, 0XFf, 0b001 do
+        a[0b10110][c] = a[0X14](c)
+    end
+end
+
+local function Sy(a, c, E, N)
+    N[0x029] = function(u)
+        u = N[0b11111](u, "z", "!!!  !")
+        local t = #u - 0X4
+        local J = N[0b1110]((t / 0B101) * 0X4)
+        local i, h = {}, (0x0)
+        for r = 0X5, t, 0B101 do
+            local t = N[0X9](u, r, r + 0X4)
+            r = (i[t])
+            if not r then
+                local u, U, Q, q, m = N[40](t, 1, 0X5)
+                local O = (m - 33) + (q - 33) * 85 + (Q - 0B100001) * 0x1c39 + (U - 0X21) * 0X95EeD + (u - 0X21) * 0x31c84B1
+                r = O
+                i[t] = (r)
+            end
+            N[0B11100](J, h, r)
+            h = h + 4
+        end
+        return J
+    end
+    if not E[0x4A6f] then
+        c = -150257088 + ((a.ks((a.Ts(E[25603], (E[0X875]))) >= E[0X7F50] and a.y[0X6] or E[0X161E], (E[0X5de9])))) + E[14726]
+        E[19055] = c
+    else
+        c = a:py(E, c)
+    end
+    return c
+end
+
+local function ps(a, c, E, N, u, t, J, i, h, r, U, Q, q, m, O, s, Y, K, C)
+    local F
+    q = (nil)
+    c = 0B00111010
+    repeat
+        if c ~= 0B111010 then
+            q = Q % 0B100
+            break
+        else
+            c = (0B1010001)
+            t = ((J - E) / 0X8)
+            continue
+        end
+    until false
+    J = u[0B110111]()
+    Y = (J % 8)
+    K = (nil)
+    O = (nil)
+    c = 0B100000
+    repeat
+        if c == 82 then
+            O = ((Q - q) / 0b1000)
+            break
+        else
+            K = (J - Y) / 0b1000
+            s[C] = (t)
+            c = 0b1010010
+            continue
+        end
+    until false
+    if u[0X5] == u[0B1000] then
+        repeat
+            return Y, q, t, O, K, -0B10, c, (0B1100011 > 0Xb6) % u[0b110111]
+        until false
+    end
+    for J = 81, 0B1110111, 0B10011 do
+        if J == 0B1100100 then
+            r[C] = O
+        elseif J == 0x51 then
+            i[C] = K
+            continue
+        else
+            if J == 0b1110111 then
+                a:qs(m, U, C)
+            end
+        end
+    end
+    if E == 4 then
+        if u[0X17] then
+            a:ls(C, t, h, u)
+        else
+            N[C] = (u[0B100][t])
+        end
+    elseif E == 0B11 then
+        s[C] = t
+    else
+        if E == 0x5 then
+            a:as(C, t, s)
+        elseif E == 0B0 then
+            for J = 28, 0B10100101, 38 do
+                F = a:is(s, t, u, C, J)
+                if F == 0Xe6C then continue
+                elseif F == 38314 then break
+                else
+                    if F ~= -1 then
+                    else
+                        return Y, q, t, O, K, -0x1, c
+                    end
+                end
+            end
+        else
+            if E ~= 0x6 then
+            else
+                Q = (#u[18])
+                u[0X12][Q + 0B1] = N
+                u[0B10010][Q + 0X2] = C
+                u[0X12][Q + 0X3] = (t)
+            end
+        end
+    end
+    return Y, q, t, O, K, nil, c
+end
+
+local function ss(a)
+    return 0X81 + (80 or 0X22)
+end
+
+local function X(a)
+    local c, E, N, u = {}, nil, nil, nil
+    local t, J, i
+    u, N = a:I(c, u, N)
+    a:T(c)
+    u, t = a:c(u, c, t, N)
+    u = a:E(c, t, u, N)
+    a:U(t, c)
+    u = a:N(c, N, u, t)
+    u = a:_(t, N, u, c)
+    u = a:P(N, t, u, c)
+    a:Xy(c)
+    u = a:qy(u, t, N, c)
+    u = a:sy(c, u, N)
+    u = a:Jy(N, c, u)
+    a:Qy(c)
+    u = a:Uy(c, N, u)
+    u = a:yi(N, u, c)
+    E, J, i, t, u = a:Js(J, N, t, u, c, i)
+    if E == -0X1 then return end
+    u, i = a:Is(u, t, J, N, i, c)
+    return c[61](i, c[0X3])
+end
+
+local function c(a, c, E, N, u)
+    E[0X9] = nil
+    c = (98)
+    repeat
+        if c > 0X62 and c < 0x73 then
+            E[6] = (unpack)
+            if not u[3340] then
+                c = a:Z(c, u)
+            else
+                c = u[0xD0C]
+            end
+        elseif c < 0B1011001 then
+            E[0X9] = (a.q.sub)
+            break
+        else
+            if c > 0X0064 then
+                E[0X7] = a.M
+                E[8] = 4294967296
+                if not (not u[25851]) then
+                    c = u[25851]
+                else
+                    c = (0B010001110 + ((a.gs((a.y[0X2] < u[14881] and u[13213] or a.y[0B111]) + c)) - u[0X2058]))
+                    u[25851] = c
+                end
+                continue
+            elseif c < 0X64 and c > 0X59 then
+                E[0X4] = a.M
+                if not (not u[8280]) then
+                    c = a:h(u, c)
+                else
+                    c = (0X39 + (a.gs((a.hs(a.y[0X1] + c + a.y[0X006])))))
+                    u[8280] = (c)
+                end
+                continue
+            else
+                if not (c > 0B110110 and c < 0x62) then
+                else
+                    E[0b101] = (function(...)
+                        return (...) [...]
+                    end)
+                    if not (not u[0X27d7]) then
+                        c = a:k(u, c)
+                    else
+                        c = a:F(u, c)
+                    end
+                end
+            end
+        end
+    until false
+    N = (buffer)
+    E[0B1010] = (select)
+    E[11] = (pcall)
+    E[12] = nil
+    E[0XD] = (nil)
+    E[14] = nil
+    return c, N
+end
+
+local function P(a, c, E, N, u)
+    N = (0X4b)
+    while true do
+        if N < 0B1001011 then
+            u[0X1c] = (E.writeu32)
+            break
+        else
+            N = a:w(c, u, N, E)
+            continue
+        end
+    end
+    u[0b11101] = E[a.p]
+    u[0X1E] = nil
+    u[0X1F] = (nil)
+    N = 82
+    while true do
+        if not (N <= 0b1001) then
+            u[0B11110] = ({})
+            if not c[19112] then
+                N = a:B(c, N)
+            else
+                N = (c[0X4aA8])
+            end
+        else
+            a:v(u)
+            break
+        end
+    end
+    return N
+end
+
+local function z(a, c, E, N)
+    N[0X1] = (type)
+    N[2] = 4503599627370496
+    if not (not E[13213]) then
+        c = E[13213]
+    else
+        c = (0X7A7eA9c4 + (a.y[0X7] + a.y[6] - a.y[0B010] - a.y[0x3] - a.y[0X6]))
+        E[0x339d] = (c)
+    end
+    return c
+end
+
+local function A(a, c, E, N, u)
+    N[0X19] = c[a.V]
+    if not E[14726] then
+        u = a:K(E, u)
+    else
+        u = (E[14726])
+    end
+    return u
+end
+
+local function Ts(a, c, E, N, u)
+    if E == 4 then
+        if not (t[0X17]) then
+            J[u] = (t[0B100][N])
+        else
+            local h, r, U = t[0B100][N], (0)
+            while true do
+                if r > 0B110010 then
+                    if r < 0X69 then
+                        h[U + 0X1] = i
+                        r = 0X32
+                    else
+                        h[U + 0X3] = 11
+                        break
+                    end
+                elseif r == 0B110010 then
+                    h[U + 2] = (u)
+                    r = (0X69)
+                else
+                    U = (#h)
+                    r = 0X5F
+                    continue
+                end
+            end
+        end
+    else
+        if E == 3 then
+            a[u] = N
+        elseif E == 0X5 then
+            a[u] = (u + N)
+        else
+            if E == 0b0 then
+                a[u] = (u - N)
+            else
+                if E == 6 then
+                    local a, E = 88
+                    repeat
+                        if a == 0X57 then
+                            t[18][E + 0b10] = u
+                            t[0X12][E + 3] = (N)
+                            break
+                        else
+                            if a ~= 0x058 then
+                            else
+                                E = (#t[0x12])
+                                a = 0B1010111
+                                t[0B10010][E + 0B1] = J
+                                continue
+                            end
+                        end
+                    until false
+                end
+            end
+        end
+    end
+    c = 109
+    return c
+end
+
+local function zs(a, c, E, N, u)
+    E[30][9] = a.o.bor
+    c = E[0X3D](c, E[3])(a, N, a.m, E[0X5], u, E[0x2D], E[0x30], E[0X33], E[0X38], E[0b111001], a.y, E[0x3d])
+    return c
+end
+
+local function Js(a, c, E, N, u, t, J)
+    local i
+    N = nil
+    u = 0x44
+    while true do
+        N, i, u = a:Cs(N, t, E, u)
+        if i == 40332 then continue
+        elseif i ~= 27809 then
+        else
+            break
+        end
+    end
+    c = (function(...)
+        return (...)()
+    end)
+    J = nil
+    u = (0x67)
+    while true do
+        if u == 0x67 then
+            J = N()
+            if not (not E[27171]) then
+                u = E[27171]
+            else
+                u = (-0X30000050 + ((a.ks((a.cs(E[24041])) - E[9034], (E[0X7f50]))) + E[0x47a0]))
+                E[0X6a23] = (u)
+            end
+            continue
+        else
+            if u == 0b110001 then
+                t[0X1E][12] = a.o.bnot
+                t[0x1E][0Xe] = a.Gs
+                break
+            else
+                if u ~= 0X1A then
+                else
+                    i, u = a:ds(t, u, E)
+                    if i == 0X274C then continue
+                    elseif i ~= -0X1 then
+                    else
+                        return -0X1, c, J, N, u
+                    end
+                end
+            end
+        end
+    end
+    t[0b11110][0B1010] = a.j
+    u = (0X6E)
+    return nil, c, J, N, u
+end
+
+local function Xy(a, c)
+    c[0X20] = a.Ns
+    c[33] = (function(a, E, N)
+        if not (N > a) then
+        else
+            return
+        end
+        local u = (a - N + 0x1)
+        if u >= 0X8 then
+            return E[N], E[N + 1], E[N + 0B10], E[N + 0X3], E[N + 0B100], E[N + 5], E[N + 0B110], E[N + 7], c[0X21](a, E, N + 8)
+        else
+            if u >= 0b111 then
+                return E[N], E[N + 0X1], E[N + 0X2], E[N + 3], E[N + 0X4], E[N + 5], E[N + 0X6], c[33](a, E, N + 7)
+            elseif u >= 6 then
+                return E[N], E[N + 1], E[N + 0X2], E[N + 0X003], E[N + 0X4], E[N + 0X5], c[0X21](a, E, N + 0b110)
+            else
+                if u >= 0X5 then
+                    return E[N], E[N + 0B01], E[N + 0B10], E[N + 0X03], E[N + 0x4], c[0x21](a, E, N + 0X5)
+                elseif u >= 4 then
+                    return E[N], E[N + 0X1], E[N + 0X2], E[N + 0x3], c[33](a, E, N + 0X4)
+                else
+                    if u >= 3 then
+                        return E[N], E[N + 1], E[N + 0X2], c[0x21](a, E, N + 3)
+                    else
+                        if not (u >= 2) then
+                            return E[N], c[33](a, E, N + 0X1)
+                        else
+                            return E[N], E[N + 0x1], c[0X21](a, E, N + 0x2)
+                        end
+                    end
+                end
+            end
+        end
+    end)
+    c[34] = function(a, E, N)
+        a = a or 1
+        N = N or #E
+        if not ((N - a + 0X1) > 0x1F3D) then
+            return c[0B110](E, a, N)
+        else
+            return c[0X21](N, E, a)
+        end
+    end
+    c[0X23] = (nil)
+    c[36] = (nil)
+    c[0B100101] = (nil)
+end
+
+local function Ti(a, c, E, N)
+    local u
+    u = nil
+    local t, J
+    E = (44)
+    repeat
+        if E > 27 then
+            t, E = a:mi(E, N, J)
+            if t == 9762 then break end
+        else
+            E, J = a:Mi(E, N, J)
+        end
+    until false
+    c = (N[0X2d]() ~= 0b0)
+    E = 0X0
+    repeat
+        if E < 0X32 then
+            t, E = a:xi(E, N)
+            if t ~= -1 then
+            else
+                return c, -0x1, E
+            end
+        elseif E > 0b0 and E < 0x5f then
+            for i = 0B1, J do
+                local h, r, U, Q = a.M, (0B1)
+                repeat
+                    if r == 0X6C then
+                        if not (U > 133) then
+                            local q = (0B100100)
+                            while true do
+                                q, t, h, u = a:Ii(N, Q, q, h, U)
+                                if t == 1941 then break
+                                elseif t == 0X9E2b then continue
+                                elseif t == -0X1 then
+                                    return c, -0X1, E
+                                else
+                                    if t ~= -0X2 then
+                                    else
+                                        return c, -0x2, E, u
+                                    end
+                                end
+                            end
+                        end
+                        break
+                    else
+                        for q = 0X2E, 0Xc5, 0X5f do
+                            if not (q < 0x8D) then
+                                break
+                            else
+                                c, t, h, u = a:Di(J, h, U, N, c)
+                                if t ~= -2 then
+                                else
+                                    return c, -0x2, E, u
+                                end
+                            end
+                        end
+                    end
+                    break
+                until false
+                if c then
+                    N[0X4][i] = ({h, (N[0X1](h))})
+                else
+                    N[0X4][i] = (h)
+                end
+            end
+            break
+        else
+            if E > 50 then
+                N[0X17] = (c)
+                E = (50)
+            end
+        end
+    until false
+    return c, nil, E
+end
+
+local function gi(a, c, E)
+    E = function()
+        local N
+        N = (nil)
+        local u, t, J
+        J, N, t, u = a:Ti(J, t, c)
+        if N == -1 then
+            return
+        else
+            if N == -2 then
+                return u
+            end
+        end
+    end
+    local i, h
+    h, N, t, i, u = a:ki(t, i, h, c, J)
+    if N ~= -0X2 then
+    else
+        return u
+    end
+    return (a:Yi(c, h, i))
+end
+
+local function yi(a, c, E, N)
+    local u
+    repeat
+        u, E = a:wy(N, E, c)
+        if u == 17647 then break end
+    until false
+    N[0b111010] = (nil)
+    N[0X3b] = (nil)
+    N[60] = (nil)
+    E = 90
+    while true do
+        if E > 0x5a then
+            N[60] = (function(...)
+                local u = N[0XA]('#', ...)
+                if u ~= 0 then
+                else
+                    return u, N[0X25]
+                end
+                return u, {...}
+            end)
+            break
+        else
+            if E < 113 then
+                E = a:Xi(c, N, E)
+                continue
+            end
+        end
+    end
+    N[0b111101] = function(a, c, u)
+        local t = a[0b11]
+        local J, i, h, r, U, Q, q, m = a[0X6], a[9], a[0X2], a[0B100], a[0X5], a[0B111], a[0B1000], a[0B1011]
+        u = (nil)
+        u = (function(...)
+            local O, s, Y, K, C = 0B1, N[0X001A](t), (1)
+            local t, F = N[60](...)
+            local L, M, V, W, p, z = 0X1, 0, (N[0b101110]())
+            local g, f, x, R = N[11](function()
+                while true do
+                    local G = (U[O])
+                    if G < 108 then
+                    elseif G < 0B110110 then
+                    end
+                end
+            end)
+            if g then
+                if f then
+                    if R ~= 0x1 then
+                        return s[x](N[0X22](x + 0X1, s, L))
+                    else
+                        return s[x]()
+                    end
+                else
+                    if x then
+                        return N[0X22](x, s, R)
+                    end
+                end
+            else
+                if K then
+                    for a, c in K do
+                        if not (a >= 0X1) then
+                        else
+                            c[0X3] = c
+                            c[0x1] = (s[a])
+                            c[0X2] = 1
+                            K[a] = nil
+                        end
+                    end
+                end
+            end
+            if N[1](f) == '\115\116\072\105\110\u{0067}' then
+                if not (N[0X34](f, '\:(\37d+)[:\r\u{A}]')) then
+                    N[0X2b](f, 0X0)
+                else
+                    N[0x2b]("L\u{075}\114a\z p\u{0068}\32Scr\u{69}pt\58" .. (J[O] or '(i\z n\116\x65\114n\97l)') .. "\z  \:\32" .. N[0xc](f), 0X0)
+                end
+            else
+                N[0x2B](f, 0X0)
+            end
+        end)
+        return u
+    end
+    N[0X3E] = nil
+    return E
+end
+
+local function Iy(a, a, c)
+    c[0Xd] = (c[0xd] + 4)
+    a = (0X1D)
+    return a
+end
+
+local function M(a, c, E, N, u)
+    c[0B10100] = (nil)
+    c[0X15] = (nil)
+    N = 0x5
+    repeat
+        if N < 32 then
+            c[0B10011] = (u[a.a])
+            c[0X14] = a.Es
+            if not E[0X25f] then
+                E[27698] = -0x78c25F8c + ((a.Ws((a.Gs((a.Ts(a.y[0B101], (E[13213]))), (E[0X339d]))), (E[0x3a21])))) + a.y[0b100]
+                E[24041] = -0X3 + (a.Zs((a.gs((a.Ws((a.Zs(E[0X234A])), (E[13213])))))))
+                N = -3179225616 + (a.Ws(((a.Fs(a.y[0x4])) < E[1765] and E[10199] or a.y[0x2]) + E[10199], (N)))
+                E[607] = N
+            else
+                N = E[607]
+            end
+        else
+            if N > 0b101 then
+                c[0x0015] = (u.readi32)
+                break
+            end
+        end
+    until false
+    c[0B10110] = ({})
+    c[0B10111] = nil
+    c[24] = nil
+    c[0X19] = nil
+    return N
+end
+
+local function I(a, c, E, N)
+    N = ({})
+    c[0X1] = (nil)
+    c[0x2] = (nil)
+    c[0B11] = (nil)
+    E = (4)
+    repeat
+        if E < 0X13 then
+            E = a:z(E, N, c)
+            continue
+        else
+            if not (E > 4) then
+            else
+                c[0X3] = {}
+                break
+            end
+        end
+    until false
+    c[0B100] = nil
+    c[5] = (nil)
+    return E, N
+end
+
+local function _(a, c, E, N, u)
+    local t
+    u[0X1a] = nil
+    N = (0X39)
+    repeat
+        t, N = a:R(N, c, u, E)
+        if t ~= 0x2D35 then
+        else
+            break
+        end
+    until false
+    u[27] = (nil)
+    u[0x1C] = (nil)
+    return N
+end
+
+local function Dy(a, a)
+    return a
+end
+
+local function Ay(a, a)
+    return a
+end
+
+local function ty(a, a)
+    return a
+end
+
+local function ys(a, a)
+    return a
+end
+
+local function qi(a)
+    return
+end
+
+local function ii(a)
+end
+
+local function ei(a)
+end
+
+local function di(a)
+end
+
+local function Qi(a)
+end
+
+local function li(a)
+end
+
+local function os(a)
+    return
+end
+
+local function Ry(a, c)
+    local E
+    for N = 0B1001010, 0B0011001100, 0X31 do
+        if N == 0xaC then
+            return -0b10, (a:Ay(E))
+        elseif N == 0X4A then
+            E = c[0X19](c[0X2a], c[0XD])
+        else
+            if N == 123 then
+                a:ny(c)
+            end
+        end
+    end
+    return nil
+end
+
+local function Hy(a, c)
+    local E, N = (c[24](c[0X2A], c[13]))
+    for u = 0B1001111, 0xA1, 0B1010010 do
+        if u < 161 then
+            N = 0X74
+        else
+            if not (u > 79) then
+            elseif N == 0X74 then
+                for N = 0XF, 0B1100101, 0B1000100 do
+                    if N == 0X0F then
+                        c[13] = (c[0B1101] + 0X4)
+                        continue
+                    elseif N == 83 then
+                        return -0B10, (a:Dy(E))
+                    end
+                end
+            end
+        end
+    end
+    return nil
+end
+
+local function Ci(a, c, E)
+    if not (0B10111110 == 159 or 0XE) then
+    else
+        a:Hi(E, c)
+    end
+end
+
+local function Fi(a, a, c, E)
+    local N = (0b1110001)
+    repeat
+        if N == 0x1C then
+            N = 0X4b
+            a[0X1E][0X4] = a[0X4]
+        else
+            if N == 113 then
+                if c ~= 0XB then
+                else
+                    return -0b10, a[60]
+                end
+                N = (0B11100)
+                continue
+            else
+                if N == 0X4B then
+                    a[0X1E][0X1] = (E)
+                    break
+                end
+            end
+        end
+    until false
+    return nil
+end
+
+local function si(a, c, E, N, u)
+    local t, J
+    if E[1] ~= N then
+    else
+        t, c, J = a:Si(E, c, u)
+        if t ~= -0b10 then
+        else
+            return -0X2, c, J
+        end
+    end
+    return nil, c
+end
+
+local function Ri(a, c, E, N)
+    local u
+    local t, J
+    for i = 0X2C, 0b1010100, 0XA do
+        if i <= 0x36 then
+            u, t, J = a:Ni(J, N, t, i)
+            if u ~= 31256 then
+            else
+                continue
+            end
+        else
+            if i <= 0X40 then
+                if t % 0x2 == 0x0 then
+                    E[c] = J - J % 0X1
+                else
+                    local u
+                    for t = 0X73, 0X8A, 0X0D do
+                        if t == 115 then
+                            c, u = a:Ki(u, c, N)
+                        else
+                            a:ni(N, J, E, c, u)
+                            break
+                        end
+                    end
+                end
+            else
+                if not (i >= 0x54) then
+                else
+                    c += 0X1
+                end
+            end
+        end
+    end
+    return c
+end
+
+local function ms(a, a, c)
+    c = a[0X37]()
+    return c
+end
+
+local function m(...)
+    (...)[...] = nil
+end
+
+local function xi(a, c, E)
+    if E[20] == E[22] then
+        a:qi()
+        return -0x1, c
+    end
+    c = (0x5f)
+    return nil, c
+end
+
+local function Ky(a, c, E, N)
+    E = (0X55)
+    if c[0X36] == c[0X1E] then
+        local u = 0X0
+        while true do
+            if u == 0B1011111 then
+                a:Ny(c)
+                break
+            else
+                if not (c[0X30]) then
+                else
+                    c[0X10], c[20] = 0x3c + c[41], c[30]
+                end
+                u = 0B1011111
+                continue
+            end
+        end
+    else
+        if c[41] == c[0x1e] then
+            return -1, E
+        else
+            if N >= c[0x002] then
+                return -0X2, E, N - c[0X026]
+            end
+        end
+    end
+    return 0x1368, E
+end
+
+local function Yi(a, c, E, N)
+    for u = 0X63, 292, 52 do
+        if u < 0XcB and u > 0X63 then
+            a:ci(c)
+            continue
+        elseif u < 0X97 then
+            if N == 0B101001 then
+                return N < (0xF2 == 88)
+            end
+            c[0x4] = a.M
+        else
+            if not (u > 151) then
+            else
+                c[0X7] = a.M
+                break
+            end
+        end
+    end
+    return E
+end
+
+local function Li(a, a, c, E, N)
+    N[a] = E[0x7][c]
+end
+
+local function pi(a, a, c)
+    c = a[0X39]()
+    return c
+end
+
+local function uy(a, a)
+    local c, E
+    for N = 9, 121, 15 do
+        if N < 0b11000 then
+            c, E = a[0X31](), a[0X031]()
+        else
+            if N > 0X18 then
+                return -0x2, E * a[0X8] + c
+            elseif not (N < 0X27 and N > 0X9) then
+            else
+                if E == 0 then
+                    return -2, c
+                else
+                    if not (E >= a[0x0010]) then
+                    else
+                        E -= a[8]
+                    end
+                end
+            end
+        end
+    end
+    return nil
+end
+
+local function py(a, a, c)
+    c = a[0X4A6F]
+    return c
+end
+
+local function Oy(a, a)
+    a[0X37], a[3] = 0Xfc, (0B10100110)
+end
+
+local function Ai(a, a, c, E, N)
+    if a[57] == a[0B100110] then
+    else
+        c[E] = N
+    end
+end
+
+local function os(a)
+    return
+end
+
+local function U(a, c, E)
+    E[17] = (c[a.l])
+    E[0X12] = a.M
+    E[0B10011] = (nil)
+end
+
+local function R(a, c, E, N, u)
+    if not (c > 0X39) then
+        c = a:n(E, N, u, c)
+    else
+        if c ~= 0B1010011 then
+            c = a:A(E, u, N, c)
+        else
+            N[0b11010] = a.i
+            return 0x2D35, c
+        end
+    end
+    return nil, c
+end
+
+local function di(a)
+end
+
+local function H(a)
+    return getfenv(a)
+end
+
+local function sy(a, c, E, N)
+    c[0B101000] = nil
+    E = 0X6b
+    repeat
+        if E > 0x55 then
+            E = a:xy(c, N, E)
+        else
+            if E < 0B1101011 and E > 0X4e then
+                a:ry(c)
+                break
+            else
+                if not (E < 0x55) then
+                else
+                    E = a:Vy(c, N, E)
+                    continue
+                end
+            end
+        end
+    until false
+    c[0B101001] = (nil)
+    c[0X2a] = (nil)
+    c[43] = (nil)
+    E = (7)
+    while true do
+        if E == 0X3A then
+            E = a:iy(E, c, N)
+        elseif E == 0B1010001 then
+            c[0X2b] = a.D
+            break
+        else
+            if E ~= 0X7 then
+            else
+                E = a:Sy(E, N, c)
+            end
+        end
+    end
+    c[0X2C] = nil
+    c[0B101101] = nil
+    c[0X2E] = (nil)
+    c[0X2F] = nil
+    c[0X30] = (nil)
+    c[49] = (nil)
+    return E
+end
+
+local function Ui(a, a, c)
+    a = c[49]()
+    return a
+end
+
+local function Ey(a, c, E, N)
+    if N <= 70 then
+        if not (N >= 0x46) then
+            N = a:zy(c, E, N)
+            return 0Xe43, N
+        else
+            E[50] = a.Ys
+            if not (not c[30711]) then
+                N = c[0x77F7]
+            else
+                N = a:ey(N, c)
+            end
+            return 3651, N
+        end
+    else
+        if not (N > 0x5a) then
+            E[54] = function()
+                local u, t
+                u, t = a:Wy(E)
+                if u == -2 then
+                    return t
+                end
+            end
+            return 0X5ec6, N
+        else
+            if N == 0X6d then
+                E[0X033] = (function()
+                    local u, t
+                    u, t = a:Ty(E)
+                    if u == -0X02 then
+                        return t
+                    end
+                end)
+                if not c[0X74EA] then
+                    N = a:Zy(c, N)
+                else
+                    N = a:hy(c, N)
+                end
+            else
+                N = a:cy(N, E, c)
+                return 0Xe43, N
+            end
+        end
+    end
+    return nil, N
+end
+
+local function Hi(a, a, c)
+    c[0X37], c[0X5] = -a, -0x14
+    c[0X1], c[0X22] = a / a, (a)
+end
+
+local function ci(a, c)
+    c[0X12] = a.M
+end
+
+local function v(a, c)
+    c[31] = a.Us
+end
+
+local function Wy(a, c)
+    local E, N, u, t = 0X0, (1)
+    for J = 36, 0Xb2, 22 do
+        u, E, N, t = a:Gy(c, E, J, N)
+        if u == -0B010 then
+            return -2, t
+        end
+    end
+    return nil
+end
+
+local function Hs(a, c, E, N)
+    N[62] = function()
+        local u, t, J, i, h, r, U
+        U, r, h, J, i = a:Gi(N, J, h, U, i, r)
+        local Q, q, m, O, s, Y
+        r, Y, m, q, Q, O, h, s, U = a:_i(h, q, O, N, m, i, Q, r, U, J, s, Y)
+        u, t = a:Ds(Q, U, i, J, O, r, q, m, Y, N, s)
+        if u == -0X2 then
+            return t
+        else
+            if u == -0X1 then
+                return
+            end
+        end
+    end
+    if not E[0X6709] then
+        E[0X44d4] = 0xC + ((a.Ys(a.y[0X6])) - E[0x7AB1] - E[28588] >= E[0X3A21] and E[0X7AB1] or a.y[0X3])
+        c = (0x97 + ((a.Fs((a.Fs(E[0X03079])))) + E[21018] - E[0x07AB1]))
+        E[26377] = (c)
+    else
+        c = (E[26377])
+    end
+    return c
+end
+
+local function ky(a, a, c)
+    c = a[0X1f41]
+    return c
+end
+
+local function hy(a, a, c)
+    c = (a[0X74eA])
+    return c
+end
+
+local function Mi(a, a, c, E)
+    E = (c[0b110110]() - 0X8dc4)
+    a = (0X3E)
+    return a, E
+end
+
+local function A(a, a)
+    return a
+end
+
+local function Ii(a, c, E, N, u, t)
+    local J, i
+    if N == 36 then
+        J, N, u, i = a:zi(t, u, c, N, E)
+        if J == 23681 then
+            return N, 40491, u
+        elseif J == -0b1 then
+            return N, -1, u
+        else
+            if J == -0X2 then
+                return N, -2, u, i
+            end
+        end
+    else
+        if N ~= 0X33 then
+        else
+            return N, 1941, u
+        end
+    end
+    return N, nil, u
+end
+
+local function Gs(a, c, E)
+    a = (E[0X1B48])
+    return a
+end
+
+local function Qy(a, a)
+    a[0x34] = nil
+    a[0X35] = nil
+    a[0X36] = (nil)
+end
+
+local function by(a, a, c)
+    c = a[18680]
+    return c
+end
+
+local function gs(a, c)
+    return bit32.countrz(a)
+end
+
+local function qs(a, a, c, E)
+    c[E] = (a)
+end
+
+local function Yy(a, a, c, E, N, u)
+    N = 0x1A
+    if a[0X8] == a[1] then
+    else
+        E += ((c > 0X7f and c - 128 or c) * u)
+    end
+    return N, E
+end
+
+local function x(a)
+    return tostring(a)
+end
+
+local function iy(a, c, E, N)
+    E[0X2a] = E[0B101001](a.b)
+    if not N[0X7502] then
+        c = (619533705 + ((a.ks((a.Ts(N[14881], (N[0X521A]))), (N[21018]))) - a.y[0B11] + N[18926]))
+        N[0X7502] = (c)
+    else
+        c = N[29954]
+    end
+    return c
+end
+
+local function j(a)
+    return bit32.countrz(a)
+end
+
+local function cy(a, c, E, N)
+    E[0X34] = a.Ks
+    if not (not N[8001]) then
+        c = a:ky(N, c)
+    else
+        c = a:Fy(c, N)
+    end
+    return c
+end
+
+local function ri(a, a, c)
+    c = a[0b111010]()
+    return c
+end
+
+local function mi(a, a, c, E)
+    if not (a >= 0X03e) then
+        a = 27
+        c[0X07] = {}
+    else
+        c[0x4] = c[26](E)
+        return 9762, a
+    end
+    return nil, a
+end
+
+local function li(a)
+end
+
+local function Ms(a, c, E, N, u, t, J)
+    N = (nil)
+    c = (nil)
+    E = nil
+    J = (nil)
+    for i = 0x3c, 0X183, 0X6d do
+        if not (i > 0XA9) then
+            if not (i < 0xA9) then
+                c = t[0B110111]()
+            else
+                N = t[0X37]()
+                continue
+            end
+        else
+            if i ~= 387 then
+                E = a:ms(t, E)
+                continue
+            else
+                J = (N % 0X8)
+            end
+        end
+    end
+    u = nil
+    return u, E, J, N, c
+end
+
+local function ei(a)
+end
+
+local function Cs(a, c, E, N, u)
+    if u == 0X53 then
+        c = a:gi(E, c)
+        return c, 0x6ca1, u
+    else
+        if u ~= 68 then
+        else
+            u = a:Hs(u, N, E)
+            return c, 40332, u
+        end
+    end
+    return c, nil, u
+end
+
+local function Jy(a, c, E, N)
+    N = 0x70
+    repeat
+        if N == 0X22 then
+            E[0x2E] = a.H
+            E[0X2F] = (function()
+                local u, t = (0X0070)
+                while true do
+                    if u > 0Xf then
+                        if u ~= 0X70 then
+                            return (a:ty(t))
+                        else
+                            t = E[19](E[42], E[0XD])
+                            u = (0b01111)
+                            continue
+                        end
+                    else
+                        E[0XD] = E[0XD] + 2
+                        u = (0x22)
+                        continue
+                    end
+                end
+            end)
+            if not c[0X6756] then
+                c[0x76BD] = (-0xd + ((a.Gs(c[0x3a21] + c[8280] + c[0X4aA8], (c[14881])))) + c[0x7502])
+                N = 0x77c87437 + ((a.cs(c[0X6c32] ~= c[11751] and c[29954] or c[1765])) - a.y[9] - c[0X5DE9])
+                c[0X6756] = (N)
+            else
+                N = (c[0X6756])
+            end
+        elseif N == 0X19 then
+            E[0X30] = function()
+                local u, t = (0X56)
+                repeat
+                    if u > 86 then
+                        return t
+                    elseif u < 0X56 then
+                        u = a:fy(E, u)
+                    else
+                        if not (u < 0X78 and u > 0X3D) then
+                        else
+                            u = 0X3D
+                            t = E[0X11](E[0B101010], E[13])
+                            continue
+                        end
+                    end
+                until false
+            end
+            if not (not c[0X48f8]) then
+                N = a:by(c, N)
+            else
+                N = (-4294967183 + (a.Fs((a.Ys(c[0x875], c[0x521A])) + c[0x875] + c[0X1f84])))
+                c[18680] = (N)
+            end
+            continue
+        elseif N == 0X24 then
+            a:Cy(E)
+            break
+        else
+            if N == 0Xf then
+                E[45] = (function()
+                    local u, t = (0B1001111)
+                    repeat
+                        if u == 98 then
+                            u = (0X59)
+                            E[0Xd] = E[13] + 0X1
+                        else
+                            if u == 79 then
+                                u = 0X062
+                                t = E[0xf](E[0b101010], E[0B1101])
+                                continue
+                            else
+                                if u == 0X59 then
+                                    return t
+                                end
+                            end
+                        end
+                    until false
+                end)
+                if not (not c[8068]) then
+                    N = a:oy(N, c)
+                else
+                    c[0X2513] = (-2393335871 + (a.Ws((a.Ys((a.ks(c[3340], (c[0X875]))), c[0X25f], c[0X64FB])) - a.y[0B00100], (c[607]))))
+                    N = (-0x2C + ((a.hs(c[1765] + c[24041])) + c[13404] ~= c[0x339D] and c[17419] or c[31409]))
+                    c[0X1f84] = (N)
+                end
+                continue
+            else
+                if N == 112 then
+                    N = a:dy(E, N, c)
+                    continue
+                end
+            end
+        end
+    until false
+    E[0X32] = (nil)
+    E[0X33] = (nil)
+    return N
+end
+
+local function Vy(a, c, E, N)
+    c[40] = a.f
+    if not (not E[0X49eE]) then
+        N = a:ay(E, N)
+    else
+        N = a:ly(N, E)
+    end
+    return N
+end
+
+local function Vi(a, c, E, N)
+    if E <= 0XA6 then
+        N = a:ri(c, N)
+    else
+        local u = (0X3B)
+        repeat
+            if u == 0B1011110 then
+                a:li()
+                break
+            else
+                if u == 0B111011 then
+                    N, u = a:ai(u, E, N, c)
+                    continue
+                end
+            end
+        until false
+    end
+    return N
+end
+
+local function ds(a, c, E, N)
+    if c[38] ~= c[0B111011] then
+    else
+        a:os()
+        return -0X1, E
+    end
+    if not N[18726] then
+        E = a:js(E, N)
+    else
+        E = (N[18726])
+    end
+    return 0X274C, E
+end
+
+local function gy(a, c, E, N, u)
+    u = E[45]()
+    local t = (0b1100111)
+    while true do
+        if t == 0X1A then
+            c *= 0X80
+            break
+        else
+            if t ~= 0X67 then
+            else
+                t, N = a:Yy(E, u, N, t, c)
+                continue
+            end
+        end
+    end
+    return c, u, N
+end
+
+local function Ys(a, c, E)
+    return bit32.bxor(a, c, E)
+end
+
+local function T(a, c)
+    a[0X6] = nil
+    a[0X7] = nil
+    a[0X8] = (nil)
+end
+
+local function Ds(a, c, E, N, u, t, J, i, h, r, U, Q)
+    local q
+    q = nil
+    local m
+    for O = 44, 0X5E, 50 do
+        if O == 0B1011110 then
+            u[5] = c
+        else
+            u[9] = Q
+        end
+    end
+    u[0B10] = (t)
+    u[0XB] = i
+    local O, s, Y = 0b1001001
+    while true do
+        if O < 0x49 then
+            O = a:Xs(U, Y, s, O)
+        else
+            if O > 0x49 then
+                return -0B10, (a:ys(u))
+            else
+                if not (O < 0X63 and O > 0X14) then
+                else
+                    O = (0B10100)
+                    for O = 1, J, 0B01 do
+                        local K, C, F, L, M
+                        M, F, L, K, C = a:Ms(C, F, K, M, U, L)
+                        local V, W, p, z, g
+                        p, V, M, g, z, q, W, m = a:ps(W, L, E, U, M, K, h, u, Q, c, F, V, C, g, t, p, z, O)
+                        if q == -2 then
+                            return -0x2, m
+                        else
+                            if q ~= -1 then
+                            else
+                                return -0b1
+                            end
+                        end
+                        W = (0X0046)
+                        repeat
+                            if W ~= 0B1000110 then
+                                if V == 0B100 then
+                                    q, m = a:ts(U, J, r, u, g, O)
+                                    if q ~= -0X2 then
+                                    else
+                                        return -2, m
+                                    end
+                                elseif V == 0b11 then
+                                    if V ~= U[0X03D] then
+                                        Q[O] = (g)
+                                    end
+                                elseif V == 0X5 then
+                                    Q[O] = (O + g)
+                                elseif V == 0x0 then
+                                    Q[O] = O - g
+                                else
+                                    if V == 0X6 then
+                                        M = nil
+                                        for c = 70, 495, 80 do
+                                            if c > 0B10010110 then
+                                                if c > 0B0011110010 then
+                                                    if c == 310 then
+                                                        U[18][M + 0X2] = O
+                                                        continue
+                                                    else
+                                                        a:fs(M, g, U)
+                                                        break
+                                                    end
+                                                else
+                                                    U[0X12][M + 1] = (r)
+                                                end
+                                            else
+                                                V, q, M = a:bs(c, N, V, U, M)
+                                                if q == 0X8De0 then
+                                                    continue
+                                                end
+                                            end
+                                        end
+                                    end
+                                end
+                                break
+                            else
+                                W = a:Ss(h, W, p, z, O, U, i, u)
+                                continue
+                            end
+                        until false
+                    end
+                    s = U[54]()
+                    Y = U[0X1A](s)
+                    u[0X1] = Y
+                end
+            end
+        end
+    end
+    return nil
+end
+
+local function Bi(a, c, E, N, u, t, J, i)
+    if c > 0XA5 then
+        a:wi(u, E, N, J, t)
+    else
+        if c < 0b10100101 then
+            i = a:vi(J, i)
+        else
+            if c < 0B011100001 and c > 0B1101001 then
+                E = {[0B10] = i - i % 1, [0x3] = J % 0X4}
+                return 0X2a3a, i, E
+            end
+        end
+    end
+    return nil, i, E
+end
+
+local function Ly(a, a, c)
+    c[13] = c[0Xd] + 8
+    return a
+end
+
+local function Ny(a, a)
+    a[16] = 0XCE + 0X4F
+end
+
+local function Vs(a, a, c)
+    if a == 0x3b then
+        if (182 == 0X64) ^ c[0X3C] then
+            return -1
+        end
+        return 7436
+    else
+        if a == 0b1100011 then
+            c[0x25] = 0X77
+            return 13563
+        end
+    end
+    return nil
+end
+
+local function ki(a, c, E, N, u, t)
+    local J, i, h = u[0X36]() - 6617
+    local r = u[0x1a](J)
+    E = (0B10011101)
+    c = 0X065
+    repeat
+        if c == 101 then
+            c = a:Zi(u, c, J)
+        elseif c == 95 then
+            for U = 0X1, #u[0X0012], 0X3 do
+                a:hi(U, u, r)
+            end
+            c = 0B110010
+            continue
+        elseif c == 0X32 then
+            if not (t) then
+            else
+                i, h = a:Fi(u, E, r)
+                if i == -0b10 then
+                    return N, -2, c, E, h
+                end
+            end
+            break
+        else
+            if c == 0B0 then
+                c = 0B1011111
+                for a = 0x1, J, 0B1 do
+                    r[a] = u[0X3E]()
+                end
+                continue
+            end
+        end
+    until false
+    N = r[u[54]()]
+    return N, nil, c, E
+end
+
+local function Ks(a, c)
+    return string.match(a, c)
+end
+
+local function fi(a, c, E, N, u, t, J, i)
+    local h, r
+    if c == 163 then
+        J = a:pi(t, J)
+    else
+        i, h, J, r = a:ti(i, E, N, J, t)
+        if h ~= -0X2 then
+        else
+            return J, u, -0B10, i, r
+        end
+    end
+    u = (107)
+    return J, u, 0Xb08a, i
+end
+
+local function Pi(a, c, E, N)
+    local u, t
+    for J = 0X16, 0X0a8, 119 do
+        if J == 0B10001101 then
+            if not (c[0X7][t]) then
+                local J, i
+                for h = 0b11001001, 0b11100001, 0X3C do
+                    u, J, i = a:Bi(h, i, E, N, c, t, J)
+                    if u ~= 0X2A3a then
+                    else
+                        continue
+                    end
+                end
+            else
+                a:Li(E, t, c, N)
+            end
+            break
+        else
+            t = a:Oi(c, t)
+            continue
+        end
+    end
+end
+
+local function Qi(a)
+end
+
+local function my(a, c, E)
+    E = (-1515385535 + (((a.Ys(c[9034], c[8280], c[0X2de7])) + c[21018] < c[19112] and a.y[0x7] or c[0X3A21]) < c[0X64FB] and a.y[7] or c[0X6403]))
+    c[13404] = E
+    return E
+end
+
+local function us(a, c, E, N)
+    E[0X1e][0b110] = a.d
+    if not N[0X1b48] then
+        c = a:Qs(c, N)
+    else
+        c = a:es(c, N)
+    end
+    return c
+end
+
+local function rs(a, a, c, E, N)
+    N[E + 0B10] = (a)
+    c = 48
+    return c
+end
+
+local function Zi(a, a, c, E)
+    a[0b10010] = a[0B11010](E * 0X3)
+    c = 0
+    return c
+end
+
+local function Ry(a, c)
+    local E
+    for N = 0B1001010, 0B0011001100, 0X31 do
+        if N == 0xaC then
+            return -0b10, (a:Ay(E))
+        elseif N == 0X4A then
+            E = c[0X19](c[0X2a], c[0XD])
+        else
+            if N == 123 then
+                a:ny(c)
+            end
+        end
+    end
+    return nil
+end
+
+local function Es(a)
+    return string.char(a)
+end
+
+local function Fs(a)
+    return bit32.bnot(a)
+end
+
+local function as(a, a, c, E)
+    E[a] = a + c
+end
+
+local function ay(a, a, c)
+    c = a[0X49eE]
+    return c
+end
+
+local function ly(a, c, E)
+    E[0x875] = -11582030 + (a.Ys((a.Ts((a.Zs(E[13404] >= E[0X6e5] and E[0XD0c] or E[0X3a21])), (E[13213]))), a.y[1], E[8280]))
+    E[0X007f50] = -3353667791 + (a.ks((a.y[0x3] < a.y[0X1] and E[8280] or a.y[0X1]) - a.y[0X2] + a.y[0b1001], (E[607])))
+    c = -3310079580 + ((E[0x25F] - a.y[0B111] ~= a.y[0x3] and E[0X0161e] or a.y[0b101]) + a.y[0X5] - E[607])
+    E[0X49EE] = c
+    return c
+end
+
+local function fs(a, a, c, E)
+    E[0X12][a + 0x3] = (c)
+end
+
+local function wi(a, a, c, E, N, u)
+    u[0X7][N] = (c)
+    a[E] = (c)
+end
+
+local function Wi(a, a, c, E)
+    a = c[0b11010](E)
+    return a
+end
+
+local function Xi(a, c, E, N)
+    E[58] = function()
+        local u = E[0X36]()
+        local t = E[0x23](E[0X002A], E[0XD], u)
+        E[0Xd] = (E[0Xd] + u)
+        return t
+    end
+    E[59] = (function()
+        local u, t, J, i, h
+        i, J, h = a:vy(h, J, i, E)
+        while true do
+            u, h, t = a:By(i, E, h, J)
+            if u == 0x2c45 then
+                continue
+            else
+                if u ~= -0X2 then
+                else
+                    return t
+                end
+            end
+        end
+    end)
+    if not (not c[22143]) then
+        N = (c[0X567F])
+    else
+        N = a:Py(N, c)
+    end
+    return N
+end
+
+local function Qs(a, c, E)
+    c = -2147483578 + (a.Ws((a.Fs((a.Fs((a.Ws(E[5662], (E[2165]))))))), (E[0X5De9])))
+    E[6984] = (c)
+    return c
+end
+
+local function wy(a, c, E, N)
+    if E == 108 then
+        c[0B111000] = (function()
+            local u, t
+            u, t = a:Ry(c)
+            if u == -0B10 then
+                return t
+            end
+        end)
+        c[57] = function()
+            local u = c[0X1B](c[0X2A], c[0Xd])
+            if c[37] ~= c[0B00110000] then
+            else
+                local t = 0X64
+                repeat
+                    if t == 0X73 then
+                        a:_y(c)
+                        break
+                    else
+                        if t == 0B1100100 then
+                            if c[16] then
+                                a:Oy(c)
+                            end
+                            t = (0X73)
+                        end
+                    end
+                until false
+            end
+            if c[0X2d] ~= c[0x0025] then
+                return (a:Ly(u, c))
+            end
+        end
+        return 0X44EF, E
+    else
+        c[0B110111] = (function()
+            local u, t, J, i = (0X06b)
+            while true do
+                if u < 0B1101011 and u > 0X4e then
+                    return i
+                elseif u < 0X55 then
+                    t, u, J = a:Ky(c, u, i)
+                    if t == 4968 then
+                        continue
+                    elseif t == -0X1 then
+                        return
+                    else
+                        if t ~= -0B010 then
+                        else
+                            return J
+                        end
+                    end
+                else
+                    if u > 85 then
+                        i = c[0X036]()
+                        u = (0X4e)
+                        continue
+                    end
+                end
+            end
+        end)
+        if not (not N[0X47A0]) then
+            E = (N[0X0047A0])
+        else
+            E = 0X44 + (((a.hs((a.ks(N[11751], (N[0X6756]))))) > N[0X49ee] and N[0X4AA8] or N[0X1f41]) + E)
+            N[18336] = E
+        end
+    end
+    return nil, E
+end
+
+local function w(a, c, E, N, u)
+    E[0x1B] = u.readf64
+    if not (not c[0x432D]) then
+        N = a:L(c, N)
+    else
+        N = a:O(c, N)
+    end
+    return N
+end
+
+local function hi(a, a, c, E)
+    c[0b10010][a][c[0B10010][a + 0B1]] = (E[0X0012][a + 0X2])
+end
+
+local function ty(a, a)
+    return a
+end
+
+local function ny(a, a)
+    a[0xD] = a[0Xd] + 4
+end
+
+local M = nil
+
+local function Y(a, a, c)
+    c = a[1765]
+    return c
+end
+
+local function cs(a, c)
+    return bit32.band(a, c)
+end
+
+local function Wy(a, c)
+    local E, N, u, t = 0X0, (1)
+    for J = 36, 0Xb2, 22 do
+        u, E, N, t = a:Gy(c, E, J, N)
+        if u == -0B010 then
+            return -2, t
+        end
+    end
+    return nil
+end
+
+local function Hs(a, c, E, N)
+    N[62] = function()
+        local u, t, J, i, h, r, U
+        U, r, h, J, i = a:Gi(N, J, h, U, i, r)
+        local Q, q, m, O, s, Y
+        r, Y, m, q, Q, O, h, s, U = a:_i(h, q, O, N, m, i, Q, r, U, J, s, Y)
+        u, t = a:Ds(Q, U, i, J, O, r, q, m, Y, N, s)
+        if u == -0X2 then
+            return t
+        else
+            if u == -0X1 then
+                return
+            end
+        end
+    end
+    if not E[0X6709] then
+        E[0X44d4] = 0xC + ((a.Ys(a.y[0X6])) - E[0x7AB1] - E[28588] >= E[0X3A21] and E[0X7AB1] or a.y[0X3])
+        c = (0x97 + ((a.Fs((a.Fs(E[0X03079])))) + E[21018] - E[0x07AB1]))
+        E[26377] = (c)
+    else
+        c = (E[26377])
+    end
+    return c
+end
+
+local function ky(a, a, c)
+    c = a[0X1f41]
+    return c
+end
+
+local function hy(a, a, c)
+    c = (a[0X74eA])
+    return c
+end
+
+local function Mi(a, a, c, E)
+    E = (c[0b110110]() - 0X8dc4)
+    a = (0X3E)
+    return a, E
+end
+
+local function N(a, c, E, N, u)
+    c[0B10100] = (nil)
+    c[0X15] = (nil)
+    N = 0x5
+    repeat
+        if N < 32 then
+            c[0B10011] = (u[a.a])
+            c[0X14] = a.Es
+            if not E[0X25f] then
+                E[27698] = -0x78c25F8c + ((a.Ws((a.Gs((a.Ts(a.y[0B101], (E[13213]))), (E[0X339d]))), (E[0x3a21])))) + a.y[0b100]
+                E[24041] = -0X3 + (a.Zs((a.gs((a.Ws((a.Zs(E[0X234A])), (E[13213])))))))
+                N = -3179225616 + (a.Ws(((a.Fs(a.y[0x4])) < E[1765] and E[10199] or a.y[0x2]) + E[10199], (N)))
+                E[607] = N
+            else
+                N = E[607]
+            end
+        else
+            if N > 0b101 then
+                c[0x0015] = (u.readi32)
+                break
+            end
+        end
+    until false
+    c[0B10110] = ({})
+    c[0B10111] = nil
+    c[24] = nil
+    c[0X19] = nil
+    return N
+end
+
+local function I(a, c, E, N)
+    N = ({})
+    c[0X1] = (nil)
+    c[0x2] = (nil)
+    c[0B11] = (nil)
+    E = (4)
+    repeat
+        if E < 0X13 then
+            E = a:z(E, N, c)
+            continue
+        else
+            if not (E > 4) then
+            else
+                c[0X3] = {}
+                break
+            end
+        end
+    until false
+    c[0B100] = nil
+    c[5] = (nil)
+    return E, N
+end
+
+local function _(a, c, E, N, u)
+    local t
+    u[0X1a] = nil
+    N = (0X39)
+    repeat
+        t, N = a:R(N, c, u, E)
+        if t ~= 0x2D35 then
+        else
+            break
+        end
+    until false
+    u[27] = (nil)
+    u[0x1C] = (nil)
+    return N
+end
+
+local function Ci(a, c, E)
+    if not (0B10111110 == 159 or 0XE) then
+    else
+        a:Hi(E, c)
+    end
+end
+
+local function Fi(a, a, c, E)
+    local N = (0b1110001)
+    repeat
+        if N == 0x1C then
+            N = 0X4b
+            a[0X1E][0X4] = a[0X4]
+        else
+            if N == 113 then
+                if c ~= 0XB then
+                else
+                    return -0b10, a[60]
+                end
+                N = (0B11100)
+                continue
+            else
+                if N == 0X4B then
+                    a[0X1E][0X1] = (E)
+                    break
+                end
+            end
+        end
+    until false
+    return nil
+end
+
+local function si(a, c, E, N, u)
+    local t, J
+    if E[1] ~= N then
+    else
+        t, c, J = a:Si(E, c, u)
+        if t ~= -0b10 then
+        else
+            return -0X2, c, J
+        end
+    end
+    return nil, c
+end
+
+local function F(a, c, E)
+    c[9034] = 97762278 + ((a.Fs((a.ks(a.y[0b00110], (c[13213])) - a.y[0x2])) - a.y[0x4]))
+    c[14881] = (-47653 + ((a.cs((a.cs(a.y[0x2] + a.y[0b11], a.y[0x2])), E)) + a.y[0X1]))
+    E = (0b1011 + (a.Ys((a.Ts((a.Ts((a.cs(a.y[9], c[0x339D], a.y[7])), (c[0x339d]))), (c[0X339d]))), E)))
+    c[0X27D7] = E
+    return E
+end
+
+local function Ri(a, c, E, N)
+    local u
+    local t, J
+    for i = 0X2C, 0b1010100, 0XA do
+        if i <= 0x36 then
+            u, t, J = a:Ni(J, N, t, i)
+            if u ~= 31256 then
+            else
+                continue
+            end
+        else
+            if i <= 0X40 then
+                if t % 0x2 == 0x0 then
+                    E[c] = J - J % 0X1
+                else
+                    local u
+                    for t = 0X73, 0X8A, 0X0D do
+                        if t == 115 then
+                            c, u = a:Ki(u, c, N)
+                        else
+                            a:ni(N, J, E, c, u)
+                            break
+                        end
+                    end
+                end
+            else
+                if not (i >= 0x54) then
+                else
+                    c += 0X1
+                end
+            end
+        end
+    end
+    return c
+end
+
+local function D(a)
+    return error(a)
+end
+
+local function ms(a, a, c)
+    c = a[0X37]()
+    return c
+end
+
+local function m(...)
+    (...)[...] = nil
+end
+
+local function xi(a, c, E)
+    if E[20] == E[22] then
+        a:qi()
+        return -0x1, c
+    end
+    c = (0x5f)
+    return nil, c
+end
+
+local function f(a, c)
+    return string.byte(a, c)
+end
+
+local function Ky(a, c, E, N)
+    E = (0X55)
+    if c[0X36] == c[0X1E] then
+        local u = 0X0
+        while true do
+            if u == 0B1011111 then
+                a:Ny(c)
+                break
+            else
+                if not (c[0X30]) then
+                else
+                    c[0X10], c[20] = 0x3c + c[41], c[30]
+                end
+                u = 0B1011111
+                continue
+            end
+        end
+    else
+        if c[41] == c[0x1e] then
+            return -1, E
+        else
+            if N >= c[0x002] then
+                return -0X2, E, N - c[0X026]
+            end
+        end
+    end
+    return 0x1368, E
+end
+
+local function Dy(a, a)
+    return a
+end
+
+local function Yi(a, c, E, N)
+    for u = 0X63, 292, 52 do
+        if u < 0XcB and u > 0X63 then
+            a:ci(c)
+            continue
+        elseif u < 0X97 then
+            if N == 0B101001 then
+                return N < (0xF2 == 88)
+            end
+            c[0x4] = a.M
+        else
+            if not (u > 151) then
+            else
+                c[0X7] = a.M
+                break
+            end
+        end
+    end
+    return E
+end
+
+local function Li(a, a, c, E, N)
+    N[a] = E[0x7][c]
+end
+
+local function pi(a, a, c)
+    c = a[0X39]()
+    return c
+end
+
+local function uy(a, a)
+    local c, E
+    for N = 9, 121, 15 do
+        if N < 0b11000 then
+            c, E = a[0X31](), a[0X031]()
+        else
+            if N > 0X18 then
+                return -0x2, E * a[0X8] + c
+            elseif not (N < 0X27 and N > 0X9) then
+            else
+                if E == 0 then
+                    return -2, c
+                else
+                    if not (E >= a[0x0010]) then
+                    else
+                        E -= a[8]
+                    end
+                end
+            end
+        end
+    end
+    return nil
+end
+
+local function py(a, a, c)
+    c = a[0X4A6F]
+    return c
+end
+
+local function Oy(a, a)
+    a[0X37], a[3] = 0Xfc, (0B10100110)
+end
+
+local function Ai(a, a, c, E, N)
+    if a[57] == a[0B100110] then
+    else
+        c[E] = N
+    end
+end
+
+local function os(a)
+    return
+end
+
+local function U(a, c, E)
+    E[17] = (c[a.l])
+    E[0X12] = a.M
+    E[0B10011] = (nil)
+end
+
+local function R(a, c, E, N, u)
+    if not (c > 0X39) then
+        c = a:n(E, N, u, c)
+    else
+        if c ~= 0B1010011 then
+            c = a:A(E, u, N, c)
+        else
+            N[0b11010] = a.i
+            return 0x2D35, c
+        end
+    end
+    return nil, c
+end
+
+local function di(a)
+end
+
+local function H(a)
+    return getfenv(a)
+end
+
+local function sy(a, c, E, N)
+    c[0B101000] = nil
+    E = 0X6b
+    repeat
+        if E > 0x55 then
+            E = a:xy(c, N, E)
+        else
+            if E < 0B1101011 and E > 0X4e then
+                a:ry(c)
+                break
+            else
+                if not (E < 0x55) then
+                else
+                    E = a:Vy(c, N, E)
+                    continue
+                end
+            end
+        end
+    until false
+    c[0B101001] = (nil)
+    c[0X2a] = (nil)
+    c[43] = (nil)
+    E = (7)
+    while true do
+        if E == 0X3A then
+            E = a:iy(E, c, N)
+        elseif E == 0B1010001 then
+            c[0X2b] = a.D
+            break
+        else
+            if E ~= 0X7 then
+            else
+                E = a:Sy(E, N, c)
+            end
+        end
+    end
+    c[0X2C] = nil
+    c[0B101101] = nil
+    c[0X2E] = (nil)
+    c[0X2F] = nil
+    c[0X30] = (nil)
+    c[49] = (nil)
+    return E
+end
+
+local function Ui(a, a, c)
+    a = c[49]()
+    return a
+end
+
+local function Ey(a, c, E, N)
+    if N <= 70 then
+        if not (N >= 0x46) then
+            N = a:zy(c, E, N)
+            return 0Xe43, N
+        else
+            E[50] = a.Ys
+            if not (not c[30711]) then
+                N = c[0x77F7]
+            else
+                N = a:ey(N, c)
+            end
+            return 3651, N
+        end
+    else
+        if not (N > 0x5a) then
+            E[54] = function()
+                local u, t
+                u, t = a:Wy(E)
+                if u == -2 then
+                    return t
+                end
+            end
+            return 0X5ec6, N
+        else
+            if N == 0X6d then
+                E[0X033] = (function()
+                    local u, t
+                    u, t = a:Ty(E)
+                    if u == -0X02 then
+                        return t
+                    end
+                end)
+                if not c[0X74EA] then
+                    N = a:Zy(c, N)
+                else
+                    N = a:hy(c, N)
+                end
+            else
+                N = a:cy(N, E, c)
+                return 0Xe43, N
+            end
+        end
+    end
+    return nil, N
+end
+
+local function Hi(a, a, c)
+    c[0X37], c[0X5] = -a, -0x14
+    c[0X1], c[0X22] = a / a, (a)
+end
+
+local function ci(a, c)
+    c[0X12] = a.M
+end
+
+local function v(a, c)
+    c[31] = a.Us
+end
+
+local function b_return(...)
+    return ({t = coroutine, xy = function(a, c, E, N) end, o = bit32, Is = function() end, o = bit32, yi = yi, h = function(a, a, c) c = a[0X2058] return c end, ry = ry, ps = ps, Sy = Sy, C = false, n = n, Ss = Ts, fy = function(a, a, c) a[13] = a[0B1101] + 0b0010 c = 0X78 return c end, _y = function(a, a) a[0B110111], a[56] = 0xD, a[0x38] < a[0X3] end, Gi = function(a, c, E, N, u, t, J) return u, J, N, E, t end, e = bit32.lrotate, Ns = Ns, yy = yy, ji = function(a, c, E, N) local u for t = 0B101000, 0Xd1, 0X32 do u, N = a:oi(E, N, t, c) if u == 0x7eb3 then break elseif u == -1 then return -0x1, N end end end, Xy = Xy, _i = function(a, c, E, N, u, t, J, i, h, r, U, Q, q) return h, q, t, E, i, N, c, Q, r end, Js = Js, Oi = function(a, a, c) c = a[0B110110]() return c end, Di = function(a, c, E, N, u, t) return t, nil, E end, K = K, oi = function(a, a, c, E, N) if E < 0X5A then if a ~= 0B1100010 then else return -0X1, c end else if not (E > 0X28) then else c = N[0x30]() return 32435, c end end return nil, c end, Ji = function(a, c, E, N, u, t) return nil, u end, ys = ys, ti = function(a, c, E, N, u, t) return c, nil, u end, ls = function(a, c, E, N, u) local t, J, i, h = (0x3c) end, J = J, W = W, E = E, ni = function(a, c, E, N, u, t) end, is = function(a, c, E, N, u, t) return 0xe6C end, js = js, q = q, a = a_var, s = s, u = u, Ti = Ti, ts = function(a, c, E, N, u, t, J) return nil end, qy = function(a, c, E, N, u) end, Si = function(a, a, c, E) local N = 0B101010 end, By = function(a, a, c, E, N) return nil, E end, zi = function(a, c, E, N, u, t) return 23681, u, E end, y = y, Ni = function(a, c, E, N, u) if u ~= 0x36 then N = a:Ui(N, E) else c = N / 0B10 return 31256, N, c end return nil, N, c end, vy = function(a, a, c, E, N) c = (nil) E = (nil) for u = 0X68, 174, 5 do if u == 109 then E = N[0xe](c) break else c = N[0X0036]() end end return E, c, a end, ss = ss, zy = function(a, c, E, N) return N end, xs = function(a, a, c, E, N, u) if E > 48 then u = N[4][a] E = 0X6b return u, 7446, E else u[c + 0b11] = 0x8 return u, 0X317D, E end end, Xs = function(a, c, E, N, u) for t = 0x1, N, 1 do a:Pi(c, t, E) end u = (0X63) return u end, ey = ey, Py = Py, G = G, S = s_var, d = d, ii = ii, Ki = function(a, a, c, E) c = E[49]() a = E[0B110001]() return c, a end, ui = function(a, c, E, N) local u = (0B1110) while true do if u >= 0X15 then a:ei() break else u = 0B10101 if not (N <= 84) then E = c[47]() else E = c[0x38]() end continue end end return E end, bs = function(a, a, c, E, N, u) if a == 0X96 then if N[0X14] == c then while N[0X33] do E = (0X79) end end return E, 0X08De0, u else u = #N[0B10010] return E, 0X8De0, u end return E, nil, u end, qi = qi, Zy = Zy, Cy = function(a, c) c[0B110001] = function() local E, N E, N = a:Hy(c) if E == -0X2 then return N end end end, vi = function(a, a, c) c = (a / 0x4) return c end, jy = jy, ai = function(a, a, c, E, N) if not (c >= 0XfF) then E = true else E = N[51]() end a = 94 return E, a end, g = g, bi = function(a, a, c) a = c[0X35]() return a end, Z = Z, c = c, Ws = Ws, Ei = function(a, a, c, E) a = c[0B11010](E) return a end, P = P, zs = zs, l = l, Gy = function(a, c, E, N, u) if N > 0b100100 then return -0X2, E, u, E else if not (N < 0X3A) then else repeat local N u, N, E = a:gy(u, c, E, N) until N < 0b1000000 end end return nil, E, u end, gi = gi, Fy = Fy, V = V_var, L = L, Ty = function(a, c) local E, N = 0b1110011 while true do if E > 29 then if E >= 0X73 then E = (0X36) N = c[21](c[42], c[0B1101]) else E = a:Iy(E, c) end else return -0X2, N end end return nil end, Ts = Ts, ks = ks, A = A, k = k, dy = function(a, c, E, N) c[0B101100] = a.t.yield if not (not N[12409]) then E = N[12409] else E = a:jy(E, N) end return E end, Iy = Iy, Q = Q, Ii = Ii, Gs = Gs, es = es, Qy = Qy, i = i, by = by, gs = gs, qs = qs, Yy = Yy, x = x, iy = iy, j = j, cy = cy, z = z, ri = ri, mi = mi, Us = Us, O = O, hs = hs, li = li, Hy = Hy, Ms = Ms, X = X, ei = ei, Cs = Cs, Jy = Jy, Bi = Bi, Ly = Ly, Ny = Ny, Vs = Vs, ki = ki, Ks = Ks, fi = fi, Pi = Pi, Qi = Qi, my = my, us = us, Zi = Zi, Ry = Ry, Es = Es, Fs = Fs, p = p_var, as = as, ay = ay, ly = ly, fs = fs, b = b_return, wi = wi, Wi = Wi, Xi = Xi, Qs = Qs, wy = wy, w = w, hi = hi, ty = ty, ny = ny, M = M, Y = Y, cs = cs, Wy = Wy, Hs = Hs, ky = ky, hy = hy, Mi = Mi, N = N, Ay = Ay, I = I, _ = _, Ci = Ci, Fi = Fi, si = si, F = F, Ri = Ri, D = D, ms = ms, m = m, xi = xi, f = f, Ky = Ky, Dy = Dy, Yi = Yi, Li = Li, pi = pi, uy = uy, py = py, Oy = Oy, Ai = Ai, os = os, U = U, R = R, di = di, H = H, sy = sy, Ui = Ui, Ey = Ey, Hi = Hi, ci = ci, v = v}):X()(...)
+end
+
+return b_return(...)
